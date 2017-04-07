@@ -1,6 +1,7 @@
 body {
     font-family: $basefont_medium;
     background: transparent url('../../img/fondo.jpg') center no-repeat;
+    height: 100vh;
 }
 
 .logo {
@@ -9,7 +10,9 @@ body {
     margin: 1rem auto;
 }
 
-.contenedor {
+.contenedor {}
+
+.contenedor-principal {
     margin: 0 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -20,34 +23,70 @@ body {
 
 .icono-menu {
     color: white;
-	&.icono-menu--abrir,
-	&.icono-menu--cerrar {
-	    position: absolute;
-	    right: 0;
-	    bottom: 50%;
-	    transform: translateY(50%);
-	    cursor: pointer;
-	    font-size: 25px;
-	    padding-right: 20px;
-	}
-	&.icono-menu--cerrar{
-		top: 20px;
-		transform: inherit;
-	}
+    &.icono-menu--abrir,
+    &.icono-menu--cerrar {
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        transform: translateY(50%);
+        cursor: pointer;
+        font-size: 25px;
+        padding-right: 20px;
+    }
+    &.icono-menu--cerrar {
+        top: 20px;
+        transform: inherit;
+    }
+}
 
+.menu-lateral {
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: orange;
+    height: 100vh;
+    transition: all .2s linear;
+}
+
+.abrir-menu {
+    width: 100%;
+}
+
+.inicio {
+    .contenedor-principal {
+        height: 78%;
+        position: relative;
+        padding: 1em;
+    }
+    .texto-inicio-carga {
+        font-family: $basefont_xlight;
+        font-size: $extra-big;
+        text-align: center;
+        color: white;
+        line-height: 1.2em;
+		@include vertical;
+		left: 0;
+		right: 0;
+    }
+}
+
+.titular-seccion h1{
+	font-size: 1.3rem;
+	color: white;
+	font-family: $basefont_xlight;
+	margin-bottom: .5em;
+	text-align: center;
+}
+.linea{
+	display: block;
+	background-image: url('../../img/punto.svg');
+	height: 1.7px;
 }
 
 
-.menu-lateral{
-	position: absolute;
-	width: 100%;
-	top: 0;
-	right: 0;
-	background-color: orange;
-	height: 100vh;
-	left: 120%;
-	transition: all .2s linear;
-}
-.abrir-menu{
-	left: 0;
-}
+
+
+
+

@@ -4,8 +4,15 @@
 $font-dir: "../fonts";
 
 
-// tamaños  de fuentes
-
+// fuentes
 $basefont : "dosisregular", Helvetica, Arial, sans-serif;
+$basefont_xlight : "dosisextralight", Helvetica, Arial, sans-serif;
 $basefont_light : "dosislight", Helvetica, Arial, sans-serif;
 $basefont_medium : "dosismedium", Helvetica, Arial, sans-serif;
+
+// tamaños  de fuentes
+
+$extra-big: 3rem;
+h1{
+	font-size: 3rem;
+}
