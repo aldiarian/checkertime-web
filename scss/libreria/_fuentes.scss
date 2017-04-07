@@ -1,0 +1,94 @@
+
+//importo fontawsome
+@import '_font-awesome';
+
+
+/*
+ *   src:url('#{$font-dir}/icomoon.eot');
+ *   src:url('#{$font-dir}/icomoon.eot?#iefix') format('embedded-opentype'),
+ *   url('#{$font-dir}/icomoon.woff') format('woff'),
+ *   url('#{$font-dir}/icomoon.ttf') format('truetype'),
+ *   url('#{$font-dir}/icomoon.svg#icomoon') format('svg');
+*/
+
+
+@font-face {
+    font-family: 'dosisbold';
+    src: url('#{$font-dir}/dosis-bold-webfont.woff2') format('woff2'),
+         url('#{$font-dir}/dosis-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosisextrabold';
+    src: url('#{$font-dir}/dosis-extrabold-webfont.woff2') format('woff2'),
+         url('#{$font-dir}/dosis-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosisextralight';
+    src: url('#{$font-dir}/dosis-extralight-webfont.woff2') format('woff2'),
+         url('#{$font-dir}/dosis-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosislight';
+    src: url('#{$font-dir}/dosis-light-webfont.woff2') format('woff2'),
+         url('#{$font-dir}/dosis-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosismedium';
+    src: url('#{$font-dir}/dosis-medium-webfont.woff2') format('woff2'),
+         url('#{$font-dir}/dosis-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosisregular';
+    src: url('#{$font-dir}/dosis-regular-webfont.woff2') format('woff2'),
+         url('#{$font-dir}/dosis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'dosissemibold';
+    src: url('#{$font-dir}/dosis-semibold-webfont.woff2') format('woff2'),
+         url('#{$font-dir}/dosis-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
