@@ -2,6 +2,7 @@ body {
     font-family: $basefont_medium;
     background: transparent url('../../img/fondo.jpg') center no-repeat;
     height: 100vh;
+    position: relative;
 }
 
 .logo {
@@ -15,6 +16,10 @@ body {
 .contenedor-principal {
     margin: 0 20px;
     background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    height: 100%;
+    min-height: 490px;
+    // position: relative;
 }
 
 .contenedor-superior {
@@ -58,35 +63,48 @@ body {
     .contenedor-principal {
         height: 78%;
         position: relative;
-        padding: 1em;
     }
     .texto-inicio-carga {
         font-family: $basefont_xlight;
-        font-size: $extra-big;
+        font-size: $extra_big;
         text-align: center;
         color: white;
-        line-height: 1.2em;
-		@include vertical;
-		left: 0;
-		right: 0;
+        line-height: 3.5rem;
+        @include vertical;
+        left: 0;
+        right: 0;
     }
 }
 
-.titular-seccion h1{
-	font-size: 1.3rem;
-	color: white;
-	font-family: $basefont_xlight;
-	margin-bottom: .5em;
-	text-align: center;
-}
-.linea{
-	display: block;
-	background-image: url('../../img/punto.svg');
-	height: 1.7px;
+.titular-seccion {
+    margin-bottom: 1.5rem;
+    p {
+        color: white;
+        font-family: $basefont_medium;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: $size-big;
+    }
 }
 
+.linea {
+    display: block;
+    background-image: url('../../img/punto.svg');
+    height: 1.7px;
+}
 
+.volver{
+    color:white;
+    display: block;
+    text-align: center;
+    font-family: $basefont_xlight;
+    text-decoration: none;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+}
 
-
-
-
+.verde-principal{
+    background-color: $verde-principal;
+}

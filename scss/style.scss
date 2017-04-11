@@ -1,5 +1,7 @@
-@import '../scss/libreria/_variables.scss';
-@import '../scss/libreria/_mixins.scss';
+@import '../scss/libreria/_variables';
+@import '../scss/libreria/_mixins';
 @import '../scss/libreria/_eric-meyer-reset.min';
 @import '../scss/libreria/_fuentes';
-@import '../scss/base/basicos';
+@import '../scss/base/_basicos';
+@import '../scss/elementos/_formularios';
+@import '../scss/elementos/_botones';
