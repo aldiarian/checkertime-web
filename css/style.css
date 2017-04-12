@@ -2522,8 +2522,7 @@ html {
 body {
   font-family: "dosismedium", Helvetica, Arial, sans-serif;
   background: transparent url("../../img/fondo.jpg") center no-repeat;
-  height: 100vh;
-  position: relative; }
+  height: 100vh; }
 
 .logo {
   width: 50%;
@@ -2534,8 +2533,9 @@ body {
   margin: 0 20px;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 20px;
-  height: 100%;
-  min-height: 490px; }
+  height: 85%;
+  min-height: 490px;
+  position: relative; }
 
 .contenedor-superior {
   position: relative; }
@@ -2567,21 +2567,31 @@ body {
 .abrir-menu {
   width: 100%; }
 
-.inicio .contenedor-principal {
+.pantalla-inicio .contenedor-principal {
   height: 78%;
   position: relative; }
 
-.inicio .texto-inicio-carga {
+.pantalla-inicio .texto-inicio-carga {
   font-family: "dosisextralight", Helvetica, Arial, sans-serif;
   font-size: 3rem;
   text-align: center;
   color: white;
-  line-height: 3.5rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 0;
   right: 0; }
+
+.pantalla-fichar .contenedor-principal {
+  margin: 0 10px;
+  padding: 10px; }
+
+.pantalla-fichar .datos-trabajador {
+  color: white;
+  text-align: center;
+  margin-bottom: 1em; }
+  .pantalla-fichar .datos-trabajador p {
+    line-height: 1.5rem; }
 
 .titular-seccion {
   margin-bottom: 1.5rem; }
@@ -2639,3 +2649,38 @@ body {
   display: block;
   margin: 0 auto;
   margin-bottom: 1rem; }
+
+.fichar {
+  padding: 5px;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "dosisextralight", Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  background-color: #5a91af;
+  border-radius: 45px;
+  border: 1px solid white;
+  position: relative;
+  max-width: 340px;
+  margin: 0 auto; }
+  .fichar .slider_entrada {
+    width: 80px;
+    height: 45px;
+    display: inline-block;
+    background-image: url("../../img/slider-arrow.svg");
+    background-repeat: no-repeat;
+    vertical-align: middle; }
+  .fichar span {
+    margin-left: 10%; }
+
+h2 {
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: slidetounlock 5s infinite;
+  -webkit-text-size-adjust: none;
+  color: white; }

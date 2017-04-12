@@ -1,7 +1,8 @@
 
 // carpeta de fuentes
-
+//  #{$font-dir}
 $font-dir: "../fonts";
+$img-dir: "../../img";
 
 
 // fuentes
@@ -28,3 +29,7 @@ h2,.h2{
 // Colores
 $fondo-input: rgba(255,255,255, 0.8);
 $verde-principal: #396a91;
+$verde-clarito: #5a91af;
+
+// Border Radius sliders
+$radius-slider: 45px;

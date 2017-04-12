@@ -15,11 +15,11 @@
 	console.log('anchura de la parte visual: ' + $innerWidth );
 
 	
-	$body = document.getElementById('principal');
+	// $body = document.getElementById('principal');
 	
 	// $body.style[property] = $innerHeight + 'px';
-	$body.style.height = $innerHeight + 'px';
-	$body.style.backgroundSize = $innerHeight + 'px';
+	// $body.style.height = $innerHeight + 'px';
+	// $body.style.backgroundSize = $innerHeight + 'px';
 
 
 
