@@ -1,0 +1,83 @@
+.menu-lateral {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: $verde-principal;
+    height: 100vh;
+    transition: all .2s linear;
+    font-family: $basefont_xlight;
+    color: white;
+    font-size: $size_big;
+    padding: 1rem;
+    transform: translate3d(900px, 0, 0);
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    p {
+        margin-bottom: .5rem;
+    }
+    .datos-conectado {
+        margin-bottom: 1rem;
+    }
+    .menus{
+    	padding: 2rem 1rem;
+    }
+    .menu {
+    	li{
+    		margin-bottom: 2rem;
+    	}
+        a {
+            color: white;
+            text-decoration: none;
+            margin-left: 12px;
+            &:before {
+                font-family: FontAwesome;
+                width: 40px;
+                height: 40px;
+                content: "";
+                position: relative;
+                top: 5px;
+                left: -12px;
+                background-color: $verde-primavera;
+                border: 1px solid white;
+                border-radius: 60px;
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+                font: normal normal normal 14px/1 FontAwesome;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            &.cambiar_contrasena:before {
+                content: "\f2c3";
+            }
+            &.fichar_manual:before {
+                content: "\f044";
+            }
+            &.informacion:before {
+                content: "\f129";
+            }
+            &.desconectar:before {
+                content: "\f011";
+                background-color: $naranja;
+            }
+            &.salir:before {
+                content: "\f08b";
+                background-color: $naranja;
+            }
+        }
+    }
+    .menu_secundario{
+		position: absolute;
+		bottom: 2rem;
+    }
+}
+
+.abrir-menu {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.8s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}

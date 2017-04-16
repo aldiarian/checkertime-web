@@ -10,8 +10,6 @@ body {
     margin: 1rem auto;
 }
 
-.contenedor {}
-
 .contenedor-principal {
     margin: 0 20px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -43,20 +41,7 @@ body {
     }
 }
 
-.menu-lateral {
-    position: fixed;
-    overflow: hidden;
-    width: 0;
-    top: 0;
-    right: 0;
-    background-color: orange;
-    height: 100vh;
-    transition: all .2s linear;
-}
 
-.abrir-menu {
-    width: 100%;
-}
 
 .pantalla-inicio {
     .contenedor-principal {
@@ -72,20 +57,6 @@ body {
         left: 0;
         right: 0;
     }
-}
-.pantalla-fichar{
-    .contenedor-principal{
-        margin: 0 10px;
-        padding: 10px;
-    }
-   .datos-trabajador{
-        color: white;
-        text-align: center;
-        margin-bottom: 1em;
-        p{
-            line-height: 1.5rem;
-        }
-   }
 }
 
 .titular-seccion {
@@ -119,4 +90,11 @@ body {
 
 .verde-principal{
     background-color: $verde-principal;
+}
+
+.texto_bold{
+    font-family: $basefont;
+}
+.texto_clarito{
+    color: $verde-clarito2;
 }
