@@ -2534,7 +2534,6 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 20px;
   height: 85%;
-  min-height: 490px;
   position: relative; }
 
 .contenedor-superior {
@@ -2624,7 +2623,7 @@ body {
   .menu-lateral .datos-conectado {
     margin-bottom: 1rem; }
   .menu-lateral .menus {
-    padding: 2rem 1rem; }
+    padding: 2rem 0; }
   .menu-lateral .menu li {
     margin-bottom: 2rem; }
   .menu-lateral .menu a {
@@ -2665,6 +2664,12 @@ body {
   .menu-lateral .menu_secundario {
     position: absolute;
     bottom: 2rem; }
+  .horizontal .menu-lateral .menu li {
+    margin-bottom: 1rem; }
+  .horizontal .menu-lateral .menus {
+    padding: 1rem; }
+  .horizontal .menu-lateral .menu_secundario {
+    right: 2rem; }
 
 .abrir-menu {
   transform: translate3d(0, 0, 0);

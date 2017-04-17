@@ -21,7 +21,7 @@
         margin-bottom: 1rem;
     }
     .menus{
-    	padding: 2rem 1rem;
+    	padding: 2rem 0;
     }
     .menu {
     	li{
@@ -73,6 +73,19 @@
     .menu_secundario{
 		position: absolute;
 		bottom: 2rem;
+    }
+    .horizontal &{
+        .menu{
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+        .menus{
+            padding: 1rem;
+        }
+        .menu_secundario{
+            right:2rem;
+        }
     }
 }
 
