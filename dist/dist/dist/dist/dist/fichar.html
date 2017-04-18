@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ChekerTime</title>
+    <!-- http://bit.ly/18VB51x -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../img/favicons/manifest.json">
+    <link rel="mask-icon" href="../img/favicons/safari-pinned-tab.svg" color="#396a91">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="pantalla-fichar" >
+
+    <div class="contenedor-superior">
+        <div class="logo">
+            <img src="img/logo-texto-checkertime.svg" alt="">
+        </div>
+        <span class="icono-menu icono-menu--abrir"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </div>
+    <div class="contenedor-principal">
+        <div class="datos-trabajador">
+            <p>Alberto Diarian - Nombre de empresa</p>
+            <p>23 / 02/ 2017 - 14:30</p>
+        </div>
+        
+        <div class="contenedor-fichar">
+            <div id="fichar_entrada" class="fichar ">
+                
+                <div id="slider_entrada" class="slider "></div> 
+                <span class="texto_fichar">fichar entrada</span>
+                <span class="texto_fichado">entrada a las 09:00</span>
+                
+            </div>
+            
+            <div id="fichar_entra_descanso" class="fichar ">
+                
+                <div id="slider_entra_descanso" class="slider "></div> 
+                <span class="texto_fichar">fichar inicio descanso</span>
+                <span class="texto_fichado">inicio desc. a las 09:00</span>
+                
+            </div>
+
+            <div id="fichar_fin_descanso" class="fichar ">
+                
+                <div id="slider_fin_descanso" class="slider "></div> 
+                <span class="texto_fichar">fichar fin descanso</span>
+                <span class="texto_fichado">fin desc. a las 09:00</span>
+                
+            </div>
+
+            <div id="fichar_salida" class="fichar ">
+                
+                <div id="slider_salida" class="slider "></div> 
+                <span class="texto_fichar">fichar salida</span>
+                <span class="texto_fichado">salida a las 09:00</span>
+                
+            </div>
+        </div>
+       
+    </div>
+    <div class="menu-lateral">
+        <span class="icono-menu icono-menu--cerrar">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </span>
+        <div class="datos-conectado">
+            <p class="texto_clarito"> Logueado como:</p>
+            <p class="texto_bold">Alberto Diarian</p>
+            <p class="texto_clarito"> Empresa:</p>
+            <p class="texto_bold">El Ojo Gráfico Enterprise</p>
+        </div>
+        <span class="linea"></span>
+        <div class="menus">
+            <ul class="menu menu_primario">
+                <li>
+                    <a class="cambiar_contrasena" href="javascript:void()">Cambiar contraseña</a>
+                </li>
+                <li>
+                    <a class="fichar_manual" href="javascript:void()">Fichar manual</a>
+                </li>
+                <li>
+                    <a class="informacion" href="javascript:void()a>Información">Información</a>
+                </li>
+            </ul>
+            <ul class="menu menu_secundario">
+                <li>
+                    <a class="desconectar" href="javascript:void()">Desconectar</a>
+                </li>
+                <li>
+                    <a class="salir" href="javascript:void()">Salir de la aplicación</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/slidetounlock.js"></script>
+
+
+    
+
+</html>

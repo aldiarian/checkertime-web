@@ -1,6 +1,6 @@
 body {
     font-family: $basefont_medium;
-    background: transparent url('../../img/fondo.jpg') center no-repeat;
+    background: transparent url('#{$img-dir}/fondo.jpg') center no-repeat;
     height: 100vh;
 }
 
