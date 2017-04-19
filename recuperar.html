@@ -1,0 +1,37 @@
+@@include('header.html')
+
+
+<body class="general recuperar" id="principal">
+
+    @@include('contenedor-superior.html')
+
+    <div class="contenedor-principal">
+        <div class="titular-seccion subrayado">
+            <p>Recuperar contraseña</p>
+            <span class="linea"></span>
+        </div>
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="contrasena-actual">Empresa</label>
+            <div class="formulario-entrada">
+                <input type="text" id="contrasena-actual" required="required" placeholder="empresa">
+            </div>
+        </div>
+
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="recuperar-dni">DNI</label>
+            <div class="formulario-entrada">
+                <input type="text" id="recuperar-dni" required="required" placeholder="DNI">
+            </div>
+        </div>
+
+
+        <button class="boton verde-principal" type="button">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+        <a href="javascript:void()" class="volver"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver atrás</a>
+    </div>
+
+    @@include('menu-lateral.html')
+    
+</body>
+
+@@include('footer.html')

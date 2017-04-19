@@ -1,0 +1,44 @@
+@@include('header.html')
+
+
+<body class="general login" id="principal">
+
+    @@include('contenedor-superior.html')
+
+    <div class="contenedor-principal">
+        <div class="titular-seccion subrayado">
+            <p>Login</p>
+            <span class="linea"></span>
+        </div>
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="login-empresa">Empresa</label>
+            <div class="formulario-entrada">
+                <input type="text" id="login-empresa" required="required" placeholder="empresa">
+            </div>
+        </div>
+
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="login-numeroId">DNI/NIE/Pasaporte/Nº Empleado</label>
+            <div class="formulario-entrada">
+                <input type="text" id="login-numeroId" required="required" placeholder="DNI/NIE/Pasaporte/Nº Empleado">
+            </div>
+        </div>
+
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="login-contrasena">Contraseña</label>
+            <div class="formulario-entrada">
+                <input type="text" id="login-contrasena" required="required" placeholder="Contraseña">
+            </div>
+        </div>
+
+
+        <button class="boton verde-principal" type="button">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+        <a href="javascript:void()" class="volver"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver atrás</a>
+    </div>
+
+    @@include('menu-lateral.html')
+    
+</body>
+
+@@include('footer.html')

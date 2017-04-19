@@ -1,7 +1,9 @@
 body {
     font-family: $basefont_medium;
     background: transparent url('#{$img-dir}/fondo.jpg') center no-repeat;
+    background-size: cover;
     height: 100vh;
+    min-height: 560px;
 }
 
 .logo {
@@ -11,11 +13,10 @@ body {
 }
 
 .contenedor-principal {
-    margin: 0 20px;
+    margin: 0 10px;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
     height: 85%;
-    // min-height: 490px;
     position: relative;
 }
 
@@ -96,3 +97,5 @@ body {
 .texto_clarito{
     color: $verde-clarito2;
 }
+
+

@@ -13,6 +13,17 @@
  *   url('#{$font-dir}/icomoon.svg#icomoon') format('svg');
 */
 
+@font-face {
+    font-family: 'robotoregular';
+    src: url('#{$font-dir}/roboto-regular-webfont.woff2') format('woff2'),
+         url('#{$font-dir}/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 
 @font-face {
     font-family: 'dosisbold';

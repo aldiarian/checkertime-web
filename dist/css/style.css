@@ -2478,6 +2478,12 @@ html {
  *   url('../../../fonts/icomoon.svg#icomoon') format('svg');
 */
 @font-face {
+  font-family: 'robotoregular';
+  src: url("../../../fonts/roboto-regular-webfont.woff2") format("woff2"), url("../../../fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'dosisbold';
   src: url("../../../fonts/dosis-bold-webfont.woff2") format("woff2"), url("../../../fonts/dosis-bold-webfont.woff") format("woff");
   font-weight: normal;
@@ -2522,7 +2528,9 @@ html {
 body {
   font-family: "dosismedium", Helvetica, Arial, sans-serif;
   background: transparent url("../../../img/fondo.jpg") center no-repeat;
-  height: 100vh; }
+  background-size: cover;
+  height: 100vh;
+  min-height: 560px; }
 
 .logo {
   width: 50%;
@@ -2530,7 +2538,7 @@ body {
   margin: 1rem auto; }
 
 .contenedor-principal {
-  margin: 0 20px;
+  margin: 0 10px;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 20px;
   height: 85%;
@@ -2600,7 +2608,7 @@ body {
   font-family: "dosisregular", Helvetica, Arial, sans-serif; }
 
 .texto_clarito {
-  color: #97c3d1; }
+  color: #8baec6; }
 
 .menu-lateral {
   position: fixed;
@@ -2691,7 +2699,19 @@ body {
     width: 100%;
     padding: 8px 10px;
     line-height: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: white; }
+    .formulario-grupo input::-webkit-input-placeholder {
+      color: #396a91;
+      font-family: "dosisextralight", Helvetica, Arial, sans-serif;
+      font-size: 1rem; }
+    .formulario-grupo input:-ms-input-placeholder {
+      color: #396a91;
+      font-family: "dosisextralight", Helvetica, Arial, sans-serif;
+      font-size: 1rem; }
+    .formulario-grupo input::placeholder {
+      color: #396a91;
+      font-family: "dosisextralight", Helvetica, Arial, sans-serif;
+      font-size: 1rem; }
 
 .boton {
   border: 1px solid white;
@@ -2775,3 +2795,22 @@ body {
     .fichar.fichado .texto_fichado {
       transform: translate3d(-60px, -50%, 70px);
       display: inline-block; }
+
+.informacion .contenedor-informacion {
+  height: 70%;
+  max-height: 500px;
+  overflow-y: scroll; }
+  .informacion .contenedor-informacion p {
+    font-family: "robotoregular", Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 22px; }
+  .informacion .contenedor-informacion .info {
+    padding-right: 15px; }
+
+.informacion ::-webkit-scrollbar-thumb {
+  background-color: #b3c6cb; }
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #82a3b2; }

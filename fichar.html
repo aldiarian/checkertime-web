@@ -1,6 +1,6 @@
 @@include('header.html')
 
-<body class="pantalla-fichar" >
+<body class="general pantalla-fichar" >
 
     <div class="contenedor-superior">
         <div class="logo">
@@ -49,39 +49,7 @@
         </div>
        
     </div>
-    <div class="menu-lateral">
-        <span class="icono-menu icono-menu--cerrar">
-            <i class="fa fa-close" aria-hidden="true"></i>
-        </span>
-        <div class="datos-conectado">
-            <p class="texto_clarito"> Logueado como:</p>
-            <p class="texto_bold">Alberto Diarian</p>
-            <p class="texto_clarito"> Empresa:</p>
-            <p class="texto_bold">El Ojo Gráfico Enterprise</p>
-        </div>
-        <span class="linea"></span>
-        <div class="menus">
-            <ul class="menu menu_primario">
-                <li>
-                    <a class="cambiar_contrasena" href="javascript:void()">Cambiar contraseña</a>
-                </li>
-                <li>
-                    <a class="fichar_manual" href="javascript:void()">Fichar manual</a>
-                </li>
-                <li>
-                    <a class="informacion" href="javascript:void()a>Información">Información</a>
-                </li>
-            </ul>
-            <ul class="menu menu_secundario">
-                <li>
-                    <a class="desconectar" href="javascript:void()">Desconectar</a>
-                </li>
-                <li>
-                    <a class="salir" href="javascript:void()">Salir de la aplicación</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    @@include('menu-lateral.html')
 
 
 

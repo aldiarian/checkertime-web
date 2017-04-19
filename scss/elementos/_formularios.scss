@@ -16,6 +16,13 @@
 	    width: 100%;
 	    padding: 8px 10px;
 	    line-height: 1.5rem;
-	    background-color: $fondo-input;
+	    background-color: white;
+	    // background-color: $fondo-input;
+	    &::placeholder{
+	    	color:$verde-principal;
+	    	font-family: $basefont_xlight;
+	    	font-size: 1rem;
+	    }
 	}
+
 }

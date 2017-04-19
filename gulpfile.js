@@ -24,7 +24,7 @@ gulp.task('serve', ['sass' , 'fileinclude', 'copytodist' ],  function() {
 });
 
 gulp.task('copytodist', function(){
-    gulp.src('./')
+    gulp.src('checkertime-web/')
         .pipe(addsrc('img/**', { base: '.'}))
         .pipe(addsrc('fonts/**', { base: '.'}))
         .pipe(addsrc('js/**', { base: '.'}))

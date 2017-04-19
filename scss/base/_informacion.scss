@@ -1,0 +1,26 @@
+
+.informacion{
+    .contenedor-informacion{
+      height: 70%;
+        max-height: 500px;
+        overflow-y:scroll;
+        p{
+          font-family: $font-second;
+          color: white;
+          font-size: 15px;
+          line-height: 22px;
+        }
+        .info{
+          padding-right: 15px;
+        }
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #b3c6cb;
+    }
+}
+    ::-webkit-scrollbar {
+        width: 12px;
+        background-color: #82a3b2;
+    }
+     
+     

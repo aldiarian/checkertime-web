@@ -1,0 +1,46 @@
+@@include('header.html')
+
+
+<body class="general" id="principal">
+    <div class="contenedor-superior">
+        <div class="logo">
+            <img src="img/logo-texto-checkertime.svg" alt="">
+        </div>
+        <span class="icono-menu icono-menu--abrir"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </div>
+    <div class="contenedor-principal">
+        <div class="titular-seccion subrayado">
+            <p>Cambiar contraseña</p>
+            <span class="linea"></span>
+        </div>
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="contrasena-actual">Escribe tu contraseña actual</label>
+            <div class="formulario-entrada">
+                <input type="text" id="contrasena-actual" required="required" placeholder="contraseña actual">
+            </div>
+        </div>
+
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="contrasena-nueva">Escribe tu contraseña nueva</label>
+            <div class="formulario-entrada">
+                <input type="text" id="contrasena-nueva" required="required" placeholder="contraseña actual">
+            </div>
+        </div>
+
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="contrasena-nueva-otra">Vuelve a escribir tu contraseña nueva</label>
+            <div class="formulario-entrada">
+                <input type="text" id="contrasena-nueva-otra" required="required" placeholder="contraseña actual">
+            </div>
+        </div>
+
+        <button class="boton verde-principal" type="button">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+        <a href="javascript:void()" class="volver"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver atrás</a>
+    </div>
+
+    @@include('menu-lateral.html')
+    
+</body>
+
+@@include('footer.html')
