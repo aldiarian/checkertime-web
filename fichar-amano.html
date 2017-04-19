@@ -1,5 +1,7 @@
 @@include('header-datepicker.html')
 
+<script src="../timedroper/js/timedropper.js"></script>
+<link rel="stylesheet" type="text/css" href="../timedroper/js/timedropper.css">
 
 <body class="general recuperar" id="principal">
 
@@ -10,17 +12,17 @@
             <p>Fichar a mano</p>
             <span class="linea"></span>
         </div>
-        
+
 
 <!-- tag element -->
-<input type="text" data-lang="es"  data-large-mode="true"/>
+<input type="text" data-lang="es" data-fx-mobile="true" data-large-mode="true" data-min-year="2015" data-lock="to"/>
 <!-- init dateDropper -->
 <script>
 $('input').dateDropper();
 </script>
 
-
-
+<input type="text" id="alarm" meridians="false"/>
+<script>$( "#alarm" ).timeDropper();</script>
 
         <button class="boton verde-principal" type="button">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
 
@@ -28,7 +30,7 @@ $('input').dateDropper();
     </div>
 
     @@include('menu-lateral.html')
-    
+
 </body>
 
 @@include('footer.html')

@@ -8,7 +8,7 @@ var addsrc = require("gulp-add-src");
 
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass' , 'fileinclude', 'copytodist' ],  function() {
+gulp.task('serve', ['sass', 'fileinclude', 'copytodist'  ],  function() {
 
     browserSync.init({
         server: "./dist/"
@@ -20,25 +20,20 @@ gulp.task('serve', ['sass' , 'fileinclude', 'copytodist' ],  function() {
     gulp.watch("modulos/*.html").on('change', browserSync.reload);
     gulp.watch("js/**/*.js").on('change', browserSync.reload);
 
-   
+
 });
+
 
 gulp.task('copytodist', function(){
-    gulp.src('checkertime-web/')
-        .pipe(addsrc('img/**', { base: '.'}))
-        .pipe(addsrc('fonts/**', { base: '.'}))
-        .pipe(addsrc('js/**', { base: '.'}))
-        .pipe(gulp.dest('dist'));
-
-});
+    gulp.src(['img/**/*', 'fonts/**/*', 'js/**/*'], {base: '.'}).pipe(gulp.dest('dist'));
+})
 
 
-     
 gulp.task('fileinclude', function() {
-  gulp.src(['**/*.html'])
+  gulp.src(['*.html'])
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: 'modulos'
+      basepath: 'modulos/'
     }))
     .pipe(gulp.dest('dist'));
 });
