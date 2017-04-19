@@ -1,0 +1,34 @@
+@@include('header-datepicker.html')
+
+
+<body class="general recuperar" id="principal">
+
+    @@include('contenedor-superior.html')
+
+    <div class="contenedor-principal">
+        <div class="titular-seccion subrayado">
+            <p>Fichar a mano</p>
+            <span class="linea"></span>
+        </div>
+        
+
+<!-- tag element -->
+<input type="text" />
+<!-- init dateDropper -->
+<script>
+$('input').dateDropper();
+</script>
+
+
+
+
+        <button class="boton verde-principal" type="button">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+        <a href="javascript:void()" class="volver"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver atrás</a>
+    </div>
+
+    @@include('menu-lateral.html')
+    
+</body>
+
+@@include('footer.html')
