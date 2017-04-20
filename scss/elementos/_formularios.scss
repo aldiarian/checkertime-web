@@ -17,11 +17,12 @@
 	    padding: 8px 10px;
 	    line-height: 1.5rem;
 	    background-color: white;
-	    // background-color: $fondo-input;
+	    font-family: $font-second;
+		font-size: $size_small;
 	    &::placeholder{
-	    	color:$verde-principal;
+	    	color:$verde-clarito2;
 	    	font-family: $basefont_xlight;
-	    	font-size: 1rem;
+	    	font-size: $size_small;
 	    }
 	}
 

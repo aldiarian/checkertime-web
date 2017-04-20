@@ -3,7 +3,7 @@
 <script src="../timedroper/js/timedropper.js"></script>
 <link rel="stylesheet" type="text/css" href="../timedroper/js/timedropper.css">
 
-<body class="general recuperar" id="principal">
+<body class="general fichar-amano" ">
 
     @@include('contenedor-superior.html')
 
@@ -13,18 +13,35 @@
             <span class="linea"></span>
         </div>
 
+        <div class="formulario-grupo ">
+            <label class="formulario-texto">Select</label>
+            <div class="selector formulario-entrada">
+              <select>
+                <option>Elije evento</option>
+                <option>Entrada</option>
+                <option>Incicio descanso </option>
+                <option>Fin descanso</option>
+                <option>Salida</option>
+              </select>
+            </div>
+        </div>
 
-<!-- tag element -->
-<input type="text" data-lang="es" data-fx-mobile="true" data-large-mode="true" data-min-year="2015" data-lock="to"/>
-<!-- init dateDropper -->
-<script>
-$('input').dateDropper();
-</script>
 
-<input type="text" id="alarm" meridians="false"/>
-<script>$( "#alarm" ).timeDropper();</script>
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="login-fecha">Fecha</label>
+            <div class="formulario-entrada">
+                <input type="text" id="login-fecha" required="required" placeholder="introduce fecha" data-lang="es" data-fx-mobile="true" data-large-mode="true" data-min-year="2015" data-lock="to">
+            </div>
+        </div>
 
-        <button class="boton verde-principal" type="button">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <div class="formulario-grupo">
+            <label class="formulario-texto" for="login-hora">Hora</label>
+            <div class="formulario-entrada">
+                <input type="text" id="login-hora" required="required" placeholder="introduce hora" id="alarm" meridians="false">
+            </div>
+        </div>
+
+        <button class="boton verde-principal" type="button">Fichar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
 
         <a href="javascript:void()" class="volver"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver atrás</a>
     </div>
@@ -34,3 +51,10 @@ $('input').dateDropper();
 </body>
 
 @@include('footer.html')
+
+<script>
+    $('#login-fecha').dateDropper();
+    $("#login-hora").timeDropper({
+        format:'hh:mm a'
+    });
+</script>

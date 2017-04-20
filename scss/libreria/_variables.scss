@@ -15,8 +15,10 @@ $font-second: "robotoregular" , Helvetica, Arial, sans-serif;
 // tamaños  de fuentes
 
 $extra_big: 3rem;
-$size-big: 1.3rem;
+$size_big: 1.3rem;
 $size_medium: 1.1rem;
+$size_normal: 1rem;
+$size_small: 0.9rem;
 
 h1,.h1{
 	font-size: 1.5rem !important;
@@ -34,6 +36,8 @@ $verde-clarito: #5a91af;
 $verde-clarito2: #8baec6;
 $verde-primavera: #009245;
 $naranja: #ff8d36;
+
+$rojo: #fd4741;
 
 // Border Radius sliders
 $radius-slider: 45px;

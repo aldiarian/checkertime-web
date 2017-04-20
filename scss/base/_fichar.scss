@@ -18,7 +18,7 @@
         p{
         	font-size: 6vw;
             @media only screen and (min-width : $bp1){
-	            font-size: $size-big;
+	            font-size: $size_big;
             	margin-bottom: .5rem;
             }
         }
@@ -38,7 +38,7 @@
 	position: relative;
 	background-color: $verde-clarito;
     @media only screen and (min-width : $bp1){
-        font-size: $size-big;
+        font-size: $size_big;
         padding: 12px ;
     }
 	.slider{

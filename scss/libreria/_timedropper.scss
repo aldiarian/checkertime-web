@@ -1,3 +1,4 @@
+$tamano:200px;
 .td-wrap,
 .td-wrap * {
     margin: 0;
@@ -16,7 +17,7 @@
 }
 .td-wrap {
     display: none;
-    font-family: sans-serif;
+    font-family: $font-second, sans-serif;
     position: absolute;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -39,15 +40,15 @@
     height: 100%;
 }
 .td-clock {
-    width: 156px;
-    height: 156px;
-    border-radius: 156px;
+    width: $tamano;
+    height: $tamano;
+    border-radius: $tamano;
     box-shadow: 0 0 0 1px #1977CC, 0 0 0 8px rgba(0, 0, 0, 0.05);
     position: relative;
     background: #FFF;
     margin: 0 auto;
     text-align: center;
-    line-height: 156px;
+    line-height: $tamano;
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,7 +145,7 @@
 }
 .td-select svg {
     position: absolute;
-    top: 0;
+    top: 12px;
     left: 0;
     right: 0;
 }
