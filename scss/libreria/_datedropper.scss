@@ -94,17 +94,17 @@ div.datedropper {
   backface-visibility: hidden;
 }
 div.datedropper:before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: -8px;
-  left: 50%;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-  -moz-transform: translateX(-50%) rotate(45deg);
-  -ms-transform: translateX(-50%) rotate(45deg);
-  -o-transform: translateX(-50%) rotate(45deg);
-  border-top-left-radius: 4px;
+  // content: "";
+  // position: absolute;
+  // width: 16px;
+  // height: 16px;
+  // top: -8px;
+  // left: 50%;
+  // -webkit-transform: translateX(-50%) rotate(45deg);
+  // -moz-transform: translateX(-50%) rotate(45deg);
+  // -ms-transform: translateX(-50%) rotate(45deg);
+  // -o-transform: translateX(-50%) rotate(45deg);
+  // border-top-left-radius: 4px;
 }
 div.datedropper.picker-focus {
   opacity: 1;
@@ -939,3 +939,15 @@ div.datedropper .null {
   -ms-transition: none;
   -o-transition: none;
 }
+
+// .datedropper:after{
+//   content:"";
+//   position: absolute;
+//   z-index: -2;
+//   width: 100vh;
+//   height: 100vh;
+//   background: orange;
+//   top:50%;
+//   left:50%;
+//   transform:translate(-50%,-50%)
+// }

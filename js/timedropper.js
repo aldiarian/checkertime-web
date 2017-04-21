@@ -21,7 +21,7 @@
                     setCurrentTime: true,
                     init_animation: "fadein",
                     primaryColor: "#396a91",
-                    borderColor: "#396a91",
+                    borderColor: "#8baec6;",
                     backgroundColor: "#FFF",
                     textColor: '#8baec6'
 
@@ -61,7 +61,7 @@
                 'readonly': true
             }).addClass('td-input');
 
-            $('body').append('<div class="td-wrap td-n2" id="td-clock-' + _td_id + '"><div class="td-overlay"></div><div class="td-clock td-init"><div class="td-deg td-n"><div class="td-select"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 135.2 34.1" enable-background="new 0 0 135.2 34.1" xml:space="preserve"> <g> <path fill="#FFFFFF" d="M0.5,34.1C15.8,13.7,40.1,0.5,67.6,0.5c27.5,0,51.8,13.2,67.1,33.6"/> <g> <path fill="none" stroke="#396A91" stroke-miterlimit="10" d="M1.1,33.2C16.5,13.3,40.5,0.5,67.6,0.5c27.1,0,51.1,12.8,66.5,32.7"/> <g> <polygon fill="#396A91" points="6.4,33.2 6.2,32.2 1.4,32.9 1,28 0,28.1 0.5,34.1"/> </g> <g> <polygon fill="#396A91" points="128.8,33.2 128.9,32.2 133.8,32.9 134.2,28 135.2,28.1 134.7,34.1"/> </g> </g> </g> </svg></div></div><div class="td-medirian"><span class="td-icon-am td-n">AM</span><span class="td-icon-pm td-n">PM</span></div><div class="td-lancette"><div></div><div></div></div><div class="td-time"><span class="on"></span>:<span></span></div></div></div>');
+            $('body').append('<div class="td-wrap td-n2" id="td-clock-' + _td_id + '"><div class="td-overlay"></div><div class="td-clock td-init"><div class="td-deg td-n"><div class="td-select"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="177.618px" height="47.206px" viewBox="0 0 177.618 47.206" enable-background="new 0 0 177.618 47.206" xml:space="preserve"><path fill="#8baec6" d="M176.623,41.126l-0.446,4.13C155.179,16.486,123.395,0,88.809,0C54.225,0,22.439,16.486,1.44,45.256l-0.446-4.13L0,41.235l0.646,5.971l5.908-1.078l-0.179-0.985l-4.17,0.762C23.012,17.359,54.524,1,88.809,1c34.286,0,65.797,16.359,86.604,44.904l-4.17-0.762l-0.179,0.985l5.908,1.078l0.646-5.971L176.623,41.126z"/></svg></div></div><div class="td-medirian"><span class="td-icon-am td-n">AM</span><span class="td-icon-pm td-n">PM</span></div><div class="td-lancette"><div></div><div></div></div><div class="td-time"><span class="on"></span>:<span></span></div></div></div>');
 
             $('head').append('<style>#td-clock-' + _td_id + ' .td-clock {color:' + _td_options.textColor + ';background: ' + _td_options.backgroundColor + '; box-shadow: 0 0 0 1px ' + _td_options.borderColor + ',0 0 0 8px rgba(0, 0, 0, 0.05); } #td-clock-' + _td_id + ' .td-clock .td-time span.on { color:' + _td_options.primaryColor + '} #td-clock-' + _td_id + ' .td-clock:before { border-color: ' + _td_options.borderColor + '} #td-clock-' + _td_id + ' .td-select:after { box-shadow: 0 0 0 1px ' + _td_options.borderColor + ' } #td-clock-' + _td_id + ' .td-clock:before,#td-clock-' + _td_id + ' .td-select:after {background: ' + _td_options.backgroundColor + ';} #td-clock-' + _td_id + ' .td-lancette {border: 2px solid ' + _td_options.primaryColor + '; opacity:0.1}#td-clock-' + _td_id + ' .td-lancette div:after { background: ' + _td_options.primaryColor + ';} #td-clock-' + _td_id + ' .td-bulletpoint div:after { background:' + _td_options.primaryColor + '; opacity:0.1}</style>');
 
@@ -142,6 +142,8 @@
                     } else {
                         _td_c.find('.td-lancette div:first').css('transform', 'rotate(' + (deg) + 'deg)');
                     }
+
+
 
                     var
                         _td_h = _td_c.find('.td-time span:first').attr('data-id'),
@@ -378,9 +380,14 @@
 
                 _td_container.removeClass('td-fadeout');
                 _td_container.addClass('td-show').addClass('td-' + _td_options.init_animation);
+                // _td_c.css({
+                //     'top': (_td_input.offset().top + (_td_input.outerHeight() - 8)),
+                //     'left': (_td_input.offset().left + (_td_input.outerWidth() / 2)) - (_td_c.outerWidth() / 2)
+                // });
                 _td_c.css({
-                    'top': (_td_input.offset().top + (_td_input.outerHeight() - 8)),
-                    'left': (_td_input.offset().left + (_td_input.outerWidth() / 2)) - (_td_c.outerWidth() / 2)
+                    'top': '50%',
+                    'left': '50%',
+                    'transform': "translate(-50%,-50%)"
                 });
 
                 if (_td_c.hasClass('td-init')) {

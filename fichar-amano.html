@@ -30,7 +30,7 @@
         <div class="formulario-grupo">
             <label class="formulario-texto" for="login-fecha">Fecha</label>
             <div class="formulario-entrada">
-                <input type="text" id="login-fecha" required="required" placeholder="introduce fecha" data-lang="es" data-fx-mobile="true" data-large-mode="true" data-min-year="2015" data-lock="to">
+                <input type="text" id="login-fecha" required="required" placeholder="introduce fecha" data-lang="es" data-fx-mobile="true" data-large-mode="true" data-large-default="true" data-min-year="2015" data-fx-mobile="false"  data-fx="false" data-lock="to">
             </div>
         </div>
 
@@ -53,8 +53,8 @@
 @@include('footer.html')
 
 <script>
-    $('#login-fecha').dateDropper();
+    $('#login-fecha').dateDropper({});
     $("#login-hora").timeDropper({
-        format:'hh:mm a'
+        format:'HH:mm a'
     });
 </script>

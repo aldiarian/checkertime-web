@@ -1,4 +1,4 @@
-$tamano:200px;
+$tamano:250px;
 .td-wrap,
 .td-wrap * {
     margin: 0;
@@ -55,18 +55,18 @@ $tamano:200px;
     background-size: cover;
 }
 .td-clock:before {
-    position: absolute;
-    content: "";
-    top: -10px;
-    margin-left: -10px;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    transform: rotate(45deg);
-    background: #FFF;
-    border-left: 1px solid #1977CC;
-    border-top: 1px solid #1977CC;
-    border-top-left-radius: 4px;
+    // position: absolute;
+    // content: "";
+    // top: -10px;
+    // margin-left: -10px;
+    // left: 50%;
+    // width: 20px;
+    // height: 20px;
+    // transform: rotate(45deg);
+    // background: #FFF;
+    // border-left: 1px solid #1977CC;
+    // border-top: 1px solid #1977CC;
+    // border-top-left-radius: 4px;
 }
 .td-init .td-deg {
     -webkit-animation: slide 1s cubic-bezier(.7, 0, .175, 1) 1.2s infinite;
@@ -87,6 +87,8 @@ $tamano:200px;
 }
 .td-wrap.td-show {
     display: block;
+    background-color:rgba(54,97,113,0.5);
+
 }
 .td-deg {
     background-position: center;
@@ -169,8 +171,8 @@ $tamano:200px;
     position: relative;
 }
 .td-clock .td-time span {
-    width: 42px;
-    height: 42px;
+    // width: 42px;
+    // height: 42px;
     display: inline-block;
     vertical-align: middle;
     line-height: 42px;
@@ -179,7 +181,7 @@ $tamano:200px;
     position: relative;
     z-index: 2;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 3.2rem;
     border-radius: 6px;
 }
 .td-clock .td-time span.on {
