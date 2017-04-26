@@ -1,9 +1,7 @@
-@@include('header-datepicker.html')
+@@include('header.html')
 
-<script src="../timedroper/js/timedropper.js"></script>
-<link rel="stylesheet" type="text/css" href="../timedroper/js/timedropper.css">
 
-<body class="general fichar-amano" ">
+<body class="general fichar-amano">
 
     @@include('contenedor-superior.html')
 
@@ -30,7 +28,7 @@
         <div class="formulario-grupo">
             <label class="formulario-texto" for="login-fecha">Fecha</label>
             <div class="formulario-entrada">
-                <input type="text" id="login-fecha" required="required" placeholder="introduce fecha" data-lang="es" data-fx-mobile="true" data-large-mode="true" data-large-default="true" data-min-year="2015" data-fx-mobile="false"  data-fx="false" data-lock="to">
+                <input type="text" id="login-fecha" required="required" placeholder="introduce fecha" data-lang="es" data-fx-mobile="true" data-large-mode="true" data-large-default="true" data-min-year="2015" data-fx-mobile="false"  data-fx="false" data-lock="to" data-format="d-M-Y">
             </div>
         </div>
 
@@ -50,11 +48,6 @@
 
 </body>
 
-@@include('footer.html')
+@@include('footer-datepicker.html')
 
-<script>
-    $('#login-fecha').dateDropper({});
-    $("#login-hora").timeDropper({
-        format:'HH:mm a'
-    });
-</script>
+
