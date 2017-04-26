@@ -9,6 +9,13 @@ body {
     font-size: 16px;
 }
 
+
+select,
+input{
+    border: 0px solid transparent;
+    border-radius: 0px;
+}
+
 .logo {
     width: 50%;
     max-width: 250px;
@@ -54,12 +61,37 @@ body {
         font-family: $basefont_xlight;
         font-size: $extra_big;
         text-align: center;
-        color: white;
+        color: $blanco_trans;
         @include vertical;
         left: 0;
         right: 0;
+        -webkit-animation: fondo1 1.5s infinite ease-in-out;
+        animation: fondo1 1.5s infinite ease-in-out;
     }
 }
+
+
+@-webkit-keyframes fondo1 {
+  0%,
+  80%,
+  100% {
+    color:rga(255,255,255);
+  }
+  40% {
+    color:rgba(255,255,255,0.2);
+  }
+}
+@keyframes fondo1 {
+  0%,
+  80%,
+  100% {
+    color:rga(255,255,255);
+  }
+  40% {
+    color:rgba(255,255,255,0.2);
+  }
+}
+
 
 .titular-seccion {
     margin-bottom: 1.5rem;
@@ -78,17 +110,24 @@ body {
     height: 1.7px;
 }
 
-.volver{
+.enlace{
     color:white;
     display: block;
     text-align: center;
     font-family: $basefont_xlight;
     text-decoration: none;
-    position: absolute;
-    bottom: 1rem;
-    left: 0;
-    right: 0;
 }
+
+    .volver{
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+    }
+
+    .olvido{
+        margin-bottom: 2em;
+    }
 
 .verde-principal{
     background-color: $verde-principal;
@@ -100,5 +139,8 @@ body {
 .texto_clarito{
     color: $verde-clarito2;
 }
+
+
+
 
 

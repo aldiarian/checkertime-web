@@ -65,6 +65,9 @@
 		background-color: $naranja;
 		.slider{
 			background-image: url('#{$img-dir}/slider-checked.svg');
+			position: relative;
+			left: 100%;
+			transform: translateX(-100%);
 		}
 		.texto_fichar{
 			transform: translate3d(900px, 0, 0);
@@ -76,7 +79,9 @@
 			display: inline-block;
 		}
 	}
-	
+	&.deshabilitado{
+		opacity: 0.5;
+	}
 	
 }
 

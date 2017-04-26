@@ -11,14 +11,20 @@
     color: white;
     font-size: $size_big;
     padding: 1rem;
+    -webkit-transform: translate3d(900px, 0, 0);
     transform: translate3d(900px, 0, 0);
+    transition: -webkit-transform 0.4s;
     transition: transform 0.4s;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    transition: transform 0.4s, -webkit-transform 0.4s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1)
     p {
         margin-bottom: .5rem;
     }
     .datos-conectado {
         margin-bottom: 1rem;
+        p{
+            margin-bottom: 5px;
+        }
     }
     .menus{
     	padding: 2rem 0;
@@ -31,13 +37,14 @@
             color: white;
             text-decoration: none;
             margin-left: 12px;
+            display: table;
+            line-height: 40px;
             &:before {
                 font-family: FontAwesome;
                 width: 40px;
                 height: 40px;
                 content: "";
                 position: relative;
-                top: 5px;
                 left: -12px;
                 background-color: $verde-primavera;
                 border: 1px solid white;
@@ -90,7 +97,10 @@
 }
 
 .abrir-menu {
-    transform: translate3d(0, 0, 0);
-    transition: transform 0.8s;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
