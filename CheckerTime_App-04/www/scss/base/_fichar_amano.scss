@@ -1,0 +1,23 @@
+.selector{
+	position: relative;
+	select{
+		width: 100%;
+		padding: 8px 10px;
+		line-height: 1.5rem;
+		background-color: white;
+		user-select: none;
+		appearance: none;
+		border-radius: 0;
+		font-family: $font-second;
+		font-size: $size_medium;
+	}
+	&::after{
+		position: absolute;
+		content: "\f0d7";
+		font-family: FontAwesome;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 15px
+	}
+
+}

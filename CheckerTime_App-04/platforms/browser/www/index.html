@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es" data-enhance="false">
+<head>
+    <meta charset="utf-8">
+    <title>CheckerTime</title>
+    <!-- http://bit.ly/18VB51x -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#396a91">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+</head>
+
+<body data-enhance="false">
+    <!-- PAGINA INICIO - pageInicio - index.html -->
+    <div id="pageInicio" data-role="page" data-enhance="false" class="pantalla-inicio">
+        <div data-role="main">
+        <div class="contenedor-superior">
+            <div class="logo">
+                <img src="img/logo-blanco-checkertime.svg" alt="">
+            </div>
+        </div>
+        <div class="contenedor-principal">
+            <p class="texto-inicio-carga">
+                comprobando credenciales
+            </p>
+        </div>
+        </div>
+    </div>
+    <!-- FIN PAGINA INICIO - pageInicio - index.html -->
+
+    <!-- PAGINA FICHAR - pageFichar - fichar.html -->
+    <div id="pageFichar" data-role="page" data-enhance="false" class="general pantalla-fichar">
+        <div data-role="main">
+        <div class="contenedor-superior">
+            <div class="logo">
+                <img src="img/logo-texto-checkertime.svg" alt="">
+            </div>
+            <span class="icono-menu icono-menu--abrir"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </div>
+        <div class="contenedor-principal">
+            <div class="datos-trabajador">
+                <p><span id="resnombre"></span> - <span id="resempresa"></span></p>
+                <p><span id="mainfecha"></span> - <span id="mainhora"></span></p>
+            </div>
+        
+            <div class="contenedor-fichar">
+                <div id="fichar_entrada" class="fichar">
+                    <div id="slider_entrada" class="slider" data-tipoevento="1"></div> 
+                    <span class="texto_fichar">fichar entrada</span>
+                    <span class="texto_fichado" id="texto-fichar-entrada">entrada</span>
+                </div>
+            
+                <div id="fichar_entra_descanso" class="fichar">
+                    <div id="slider_entra_descanso" class="slider" data-tipoevento="3"></div> 
+                    <span class="texto_fichar">fichar inicio descanso</span>
+                    <span class="texto_fichado" id="texto-fichar-iniciodescanso">inicio desc.</span>
+                </div>
+
+                <div id="fichar_fin_descanso" class="fichar">
+                    <div id="slider_fin_descanso" class="slider" data-tipoevento="4"></div> 
+                    <span class="texto_fichar">fichar fin descanso</span>
+                    <span class="texto_fichado" id="texto-fichar-findescanso">fin desc.</span>
+                </div>
+
+                <div id="fichar_salida" class="fichar">
+                    <div id="slider_salida" class="slider" data-tipoevento="2"></div> 
+                    <span class="texto_fichar">fichar salida</span>
+                    <span class="texto_fichado" id="texto-fichar-salida">salida</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- FIN PAGINA FICHAR - pageFichar - fichar.html -->
+
+    <!-- PAGINA CAMBIAR CONTRASEÑA - pageCambiarContrasena - cambiar-contrasena.html -->
+    <div id="pageCambiarContrasena" data-role="page" data-enhance="false" class="general">
+        <div data-role="main">
+        <div class="contenedor-superior">
+            <div class="logo">
+                <img src="img/logo-texto-checkertime.svg" alt="">
+            </div>
+            <span class="icono-menu icono-menu--abrir" id="menu-cambio"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </div>
+        <div class="contenedor-principal">
+            <div class="titular-seccion subrayado">
+                <p>Cambiar contraseña</p>
+                <span class="linea"></span>
+            </div>
+
+            <div class="titular-seccion" id="grupo-cambio-obligado">
+                <p>Debe cambiar su contraseña por otra de su elección</p>
+            </div>
+
+            <div class="formulario-grupo" id="grupo-cambio-no-obligado">
+                <label class="formulario-texto" for="contrasena-actual">Escriba su contraseña actual</label>
+                <div class="formulario-entrada">
+                    <input type="password" id="contrasena-actual" required="required" placeholder="contraseña actual">
+                </div>
+            </div>
+
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="contrasena-nueva">Escriba su contraseña nueva</label>
+                <div class="formulario-entrada">
+                    <input type="password" id="contrasena-nueva" required="required" placeholder="contraseña actual">
+                </div>
+            </div>
+
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="contrasena-nueva-otra">Vuelva a escribir su contraseña nueva</label>
+                <div class="formulario-entrada">
+                    <input type="password" id="contrasena-nueva-otra" required="required" placeholder="contraseña actual">
+                </div>
+            </div>
+
+            <button class="boton verde-principal" type="button" id="cambiarButton">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+            <a href="#pageFichar" class="enlace volver" id="atras-cambio"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver atrás</a>
+        </div>
+        </div>
+    </div>
+    <!-- FIN PAGINA CAMBIAR CONTRASEÑA - pageCambiarContrasena - cambiar-contrasena.html -->
+
+    <!-- PAGINA INFORMACION - pageInformacion - informacion.html -->
+    <div id="pageInformacion" data-role="page" data-enhance="false" class="general informacion">
+        <div data-role="main">
+        <div class="contenedor-superior">
+            <div class="logo">
+                <img src="img/logo-texto-checkertime.svg" alt="">
+            </div>
+            <span class="icono-menu icono-menu--abrir"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </div>
+
+        <div class="contenedor-principal">
+            <div class="titular-seccion subrayado">
+                <p>Información</p>
+                <span class="linea"></span>
+            </div>
+
+            <div class="contenedor-informacion">
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci natus, ipsam, ex nihil soluta ut porro ipsa? Nostrum dignissimos repudiandae aut unde, inventore voluptate, tenetur nemo, id non cum tempore! </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem doloribus odit numquam, error quos explicabo, quidem accusantium, sequi sapiente sit impedit enim qui? Aliquam velit, ea est! Porro corporis, fugit. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo consequatur, qui. Asperiores, id optio magnam cupiditate tempore quam. Ullam doloremque id voluptatem dolor quibusdam. Reprehenderit animi, eum soluta harum velit! </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, eaque. Officia rerum, soluta vel facilis, culpa eum accusantium ad, blanditiis qui mollitia at repellat molestiae dolorem eaque, voluptate consectetur illo. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt unde sit minus voluptas ducimus eveniet repudiandae dolorem optio ut, perferendis explicabo nihil dicta illum tempora adipisci amet, atque deserunt architecto. </p>
+                </div>
+            </div>
+            <a href="#pageFichar" class="enlace volver"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver atrás</a>
+        </div>
+        </div>
+    </div>
+    <!-- FIN PAGINA INFORMACION - pageInformacion - informacion.html -->
+
+    <!-- PAGINA RECUPERAR - pageRecuperar - recuperar.html -->
+    <div id="pageRecuperar" data-role="page" data-enhance="false" class="general recuperar">
+        <div data-role="main">
+        <div class="contenedor-superior">
+            <div class="logo">
+                <img src="img/logo-texto-checkertime.svg" alt="">
+            </div>
+        </div>
+
+        <div class="contenedor-principal">
+            <div class="titular-seccion subrayado">
+                <p>Recuperar contraseña</p>
+                <span class="linea"></span>
+            </div>
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="contrasena-actual">Empresa</label>
+                <div class="formulario-entrada">
+                    <input type="text" id="contrasena-actual" required="required" placeholder="empresa">
+                </div>
+            </div>
+
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="recuperar-dni">DNI</label>
+                <div class="formulario-entrada">
+                    <input type="text" id="recuperar-dni" required="required" placeholder="DNI">
+                </div>
+            </div>
+
+            <button class="boton verde-principal" type="button" id="recuperarButton">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+            <a href="#pageLogin" class="enlace volver"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver a Acceso</a>
+        </div>
+        </div>
+    </div>
+    <!-- FIN PAGINA RECUPERAR - pageRecuperar - recuperar.html -->
+
+    <!-- PAGINA FICHAR A MANO - pageFicharManual - fichar-amano.html -->
+    <div id="pageFicharManual" data-role="page" data-enhance="false" class="general fichar-amano">
+        <div data-role="main">
+        <div class="contenedor-superior">
+            <div class="logo">
+                <img src="img/logo-texto-checkertime.svg" alt="">
+            </div>
+            <span class="icono-menu icono-menu--abrir"><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </div>
+
+        <div class="contenedor-principal">
+            <div class="titular-seccion subrayado">
+                <p>Fichar a mano</p>
+                <span class="linea"></span>
+            </div>
+
+            <div class="formulario-grupo ">
+                <label class="formulario-texto">Seleccione un tipo de evento</label>
+                <div class="selector formulario-entrada">
+                  <select>
+                    <option value="0">Elija evento</option>
+                    <option value="1">Entrada</option>
+                    <option value="3">Inicio descanso </option>
+                    <option value="4">Fin descanso</option>
+                    <option value="2">Salida</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="login-fecha">Fecha</label>
+                <div class="formulario-entrada">
+                    <input type="text" id="login-fecha" required="required" placeholder="introduce fecha" data-lang="es" data-fx-mobile="true" data-large-mode="true" data-large-default="true" data-min-year="2015" data-fx-mobile="false"  data-fx="false" data-lock="to" data-format="d-M-Y" data-modal="true">
+                </div>
+            </div>
+
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="login-hora">Hora</label>
+                <div class="formulario-entrada">
+                    <input type="text" id="login-hora" required="required" placeholder="introduce hora" id="alarm" meridians="false">
+                </div>
+            </div>
+
+            <button class="boton verde-principal" type="button" id="ficharButton">Fichar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+
+            <a href="#pageFichar" class="enlace volver"><i class="fa fa-angle-left" aria-hidden="true"></i> Volver atrás</a>
+        </div>
+        </div>
+    </div>
+    <!-- FIN PAGINA FICHAR A MANO - pageFicharManual - fichar-amano.html -->
+
+    <!-- PAGINA LOGIN - pageLogin - login.html -->
+    <div id="pageLogin" data-role="page" data-enhance="false" class="general login">
+        <div data-role="main">
+        <div class="contenedor-superior">
+            <div class="logo">
+                <img src="img/logo-texto-checkertime.svg" alt="">
+            </div>
+        </div>
+
+        <div class="contenedor-principal">
+            <div class="titular-seccion subrayado">
+                <p>Acceso</p>
+                <span class="linea"></span>
+            </div>
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="login-empresa">Empresa</label>
+                <div class="formulario-entrada">
+                    <input type="text" id="login-empresa" required="required" placeholder="empresa">
+                </div>
+            </div>
+
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="login-numeroId">DNI/NIE/Pasaporte/Nº Empleado</label>
+                <div class="formulario-entrada">
+                    <input type="text" id="login-numeroId" required="required" placeholder="DNI/NIE/Pasaporte/Nº Empleado">
+                </div>
+            </div>
+
+            <div class="formulario-grupo">
+                <label class="formulario-texto" for="login-contrasena">Contraseña</label>
+                <div class="formulario-entrada">
+                    <input type="password" id="login-contrasena" required="required" placeholder="Contraseña">
+                </div>
+            </div>
+
+            <a href="#pageRecuperar" class="enlace olvido" id="enlaceOlvidoContrasena">¿Olvidó su contraseña?</a>
+
+            <button class="boton verde-principal" type="button" id="loginButton">Guardar <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+        </div>
+    </div>
+    <!-- FIN PAGINA LOGIN - pageLogin - login.html -->
+
+    <div class="menu-lateral" data-enhance="false">
+        <span class="icono-menu icono-menu--cerrar">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </span>
+        <div class="datos-conectado">
+            <p class="texto_clarito"> Identificado como:</p>
+            <p class="texto_bold" id="resnombre2"></p>
+            <p class="texto_clarito"> Empresa:</p>
+            <p class="texto_bold" id="resempresa2"></p>
+        </div>
+        <span class="linea"></span>
+        <div class="menus">
+            <ul class="menu menu_primario">
+                <li>
+                    <a class="cambiar_contrasena" href="javascript:app.cambiaPagina( '#pageCambiarContrasena' );">Cambiar contraseña</a>
+                </li>
+                <li id="fichado_manual">
+                    <a class="fichar_manual" href="javascript:app.cambiaPagina( '#pageFicharManual' );">Fichar manual</a>
+                </li>
+                <li>
+                    <a class="informacion" href="javascript:app.cambiaPagina( '#pageInformacion' );">Información</a>
+                </li>
+            </ul>
+            <ul class="menu menu_secundario">
+                <li>
+                    <a class="desconectar" href="javascript:desconectar();" id="botonDesconectar">Desconectar</a>
+                </li>
+                <li>
+                    <a class="salir" href="javascript:salir();" id="botonSalir">Salir de la aplicación</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script>
+        $( document ).on( 'mobileinit', function () {
+            $.mobile.ignoreContentEnabled = true;
+            $.mobile.page.prototype.options.keepNative = "body";
+        } );
+    </script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/datedropper.min.js"></script>
+    <script type="text/javascript" src="js/timedropper.js"></script>
+    <script type="text/javascript" src="js/sha256.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+</body>
+</html>

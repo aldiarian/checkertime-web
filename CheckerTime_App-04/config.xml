@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="net.elojografico.checkertime" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>CheckerTime</name>
+    <description>
+        La aplicación para fichar en el entorno de control de presencia de checkertime.com.
+    </description>
+    <author email="info@elojografico.net" href="http://elojografico.net">
+        El Ojo Gráfico
+    </author>
+    <content src="index.html" />
+
+    <platform name="ios">
+        <icon src="res/icons/apple-touch-icon.png" width="180" height="180" />
+    </platform>
+
+    <platform name="android">
+        <icon src="res/icons/android-chrome-192x192.png" width="192" height="192" />
+        <icon src="res/icons/android-chrome-512x512.png" width="512" height="512" />
+    </platform>
+
+    <platform name="winphone">
+        <icon src="res/icons/mstile-144x144.png" width="144" height="144" />
+    </platform>
+
+    <plugin name="cordova-plugin-dialogs" source="npm" />
+    <plugin name="cordova-plugin-device" source="npm" />
+    <plugin name="cordova-plugin-geolocation" source="npm" />
+    
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+
+    <access origin="*" />
+
+</widget>

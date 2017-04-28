@@ -1,0 +1,51 @@
+
+// carpeta de fuentes
+//  #{$font-dir}
+$font-dir: "../fonts";
+$img-dir: "../img";
+
+
+// fuentes
+$basefont : "dosisregular", Helvetica, Arial, sans-serif;
+$basefont_xlight : "dosisextralight", Helvetica, Arial, sans-serif;
+$basefont_light : "dosislight", Helvetica, Arial, sans-serif;
+$basefont_medium : "dosismedium", Helvetica, Arial, sans-serif;
+$font-second: "robotoregular" , Helvetica, Arial, sans-serif;
+
+// tamaños  de fuentes
+
+$extra_big: 3rem;
+$size_big: 1.3rem;
+$size_medium: 1.1rem;
+$size_normal: 1rem;
+$size_small: 0.9rem;
+
+h1,.h1{
+	font-size: 1.5rem !important;
+}
+h2,.h2{
+	font-size: 1.2rem !important;
+}
+
+
+
+// Colores
+$fondo-input: rgba(255,255,255, 0.8);
+$verde-principal: #396a91;
+$verde-clarito: #5a91af;
+$verde-clarito2: #8baec6;
+$verde-primavera: #009245;
+$naranja: #ff8d36;
+$gris: #b5b5b5;
+$gris2: #dedede;
+
+$rojo: #fd4741;
+
+$blanco_trans: rgba(255,255,255, 0.5);
+
+// Border Radius sliders
+$radius-slider: 45px;
+
+
+// break-poits
+$bp1:360px;

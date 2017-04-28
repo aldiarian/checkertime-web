@@ -1,0 +1,21 @@
+.ui-input-text, .ui-input-search {
+    margin: .5em 0;
+    border-width: 0; 
+    border-style: none; 
+}
+.ui-mobile, .ui-mobile body{
+	height: auto;
+	max-height: 740px;
+}
+
+::-webkit-scrollbar {
+  width: 0px !important;
+ }
+
+ // div#pageLogin.general.login.ui-page.ui-page-theme-a.ui-page-active{
+ // 	height: 100%;
+ // }
+
+ // div#pageFicharManual.general.fichar-amano.ui-page.ui-page-theme-a.ui-page-active{
+ // 	height: 100vh;
+ // }
