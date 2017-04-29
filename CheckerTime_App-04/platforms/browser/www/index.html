@@ -335,5 +335,11 @@
     <script type="text/javascript" src="js/sha256.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
+
+    <script>
+        var altura = window.innerHeight;
+        console.log(altura);
+        document.getElementsByTagName("body")[0].style.height = altura + 'px';
+    </script>
 </body>
 </html>
