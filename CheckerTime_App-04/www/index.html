@@ -338,8 +338,11 @@
 
     <script>
         var altura = window.innerHeight;
-        console.log(altura);
-        document.getElementsByTagName("body")[0].style.height = altura + 'px';
+        $('body, div[data-role="main"]').css({
+            'height': altura + 'px',
+            'min-height': '560px'
+            });
+
     </script>
 </body>
 </html>

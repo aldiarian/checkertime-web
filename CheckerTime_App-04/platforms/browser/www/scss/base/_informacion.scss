@@ -3,11 +3,13 @@
         max-height: 400px;
         overflow-y: scroll;
         margin-bottom: 2rem;
+        height: 70%;
         p {
             font-family: $font-second;
             color: white;
             font-size: 15px;
             line-height: 22px;
+            margin-bottom: 1rem;
         }
         .info {
             padding-right: 15px;

@@ -2,10 +2,11 @@
     .contenedor-principal{
         margin: 0 10px;
         padding: 10px;
-    	height: 85%;
+		height: 85%;
     }
     .contenedor-fichar{
-		min-height: 380px;
+		height: 80%;
+		max-height: 440px;
 		display: flex;
 		max-width: 340px;
 		margin: 0 auto;

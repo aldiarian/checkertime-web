@@ -26,7 +26,6 @@ input{
     margin: 0 10px;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
-    height: 85%;
     position: relative;
 }
 
@@ -119,10 +118,8 @@ input{
 }
 
     .volver{
-        position: absolute;
-        bottom: 1rem;
-        left: 0;
-        right: 0;
+        width: 90px;
+        margin: 0 auto;
     }
 
     .olvido{
